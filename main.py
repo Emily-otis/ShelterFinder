@@ -3,6 +3,7 @@ from tkinter import Canvas
 from tkinter import PhotoImage
 
 
+
 # A list of point data, including information about the distance, walking time, and closest shelter
 points_data = [
     # Add each point as a dictionary with the relevant information
@@ -77,6 +78,7 @@ def create_shelter_button(canvas, shelter_data):
 
 # Main function that initializes the window, loads the background image, and creates buttons for points and shelters
 def window():
+
     root = tk.Tk()
     root.geometry("900x900")
     root.title("Shelter")
@@ -99,8 +101,9 @@ def window():
 
     global info_var
     info_var = tk.StringVar()
-    info_label = tk.Label(root, textvariable=info_var, anchor=tk.W, justify=tk.LEFT)
-    info_label.place(x=17, y=680, width=200, height=80)
+    font1 = ("Arial", 15)
+    info_label = tk.Label(root, textvariable=info_var, anchor=tk.W, justify=tk.LEFT, font=font1)
+    info_label.place(x=17, y=610, width=320, height=150)
 
     for point_data in points_data:
         create_point_button(canvas, point_data)
