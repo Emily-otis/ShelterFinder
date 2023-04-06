@@ -86,8 +86,6 @@ def window():
 
 
     bg = PhotoImage(file="CampusStormShelters900.png")
-    label1 = tk.Label(root, image=bg)
-    label1.place(x=0, y=0)
 
     global current_line_id
     current_line_id = None
