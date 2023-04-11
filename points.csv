@@ -1,0 +1,14 @@
+id,x,y,distance_m,distance_ft,walking_time,closest_shelters
+1,406,278,0.5,2640,10 mins,Haley Center
+2,520,244,0.4,2112,7 mins,Haley Center
+3,621,231,0.2,1056,4 mins,Brown-Kopel
+4,811,178,0.2,1056,4 mins,Draughon Library
+5,691,278,0.1,528,3 mins,Haley Center
+6,694,352,0.1,528,3 mins,Haley Center
+7,808,384,0.1,528,3 mins,Draughon Library
+8,624,390,0.1,528,3 min,Haley Center
+9,453,376,0.4,2112,8 min,Haley Center
+10,741,513,0.4,2112,8 min,Draughon Library
+11,523,542,0.5,2640,11 min,Haley Center
+12,681,457,0.3,1584,6 min,Draughon Library
+13,617,609,0.6,3168,12 min,Haley Center
