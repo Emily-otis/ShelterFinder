@@ -98,16 +98,22 @@ def window(points_data, shelters_data):
 # The function takes three arguments: launch_callback, points_data, and shelters_data
 def main_window(launch_callback, points_data, shelters_data):
     # Creates a new window with the specified size and title
+
     main_win = tk.Tk()
-    main_win.geometry("900x900")
+    main_win.geometry("1280x914")
+
+    bgMain = PhotoImage(file="TitleSreenFrontPage2.png")
+    label2 = tk.Label(main_win, image=bgMain)
+    label2.place(x=0, y=0)
+
     main_win.title("main")
     # Creates a label with a welcome message and places it on the main window
     description_label = tk.Label(main_win, text="Welcome to the map application. \nThis app provides the nearest storm shelter when you encounter a storm. \n"
                                                 "There are multiple locations and three storm shelters available. \nWhen you click on a location, the distance and other related information "
                                                 "will be displayed in the bottom left corner. \nClick the options below to get started.", font=("Arial", 10), fg="blue")
-    description_label.place(x=70, y=50)
+    description_label.place(x=500, y=42)
     # Creates a button for visitors and assigns a lambda function that calls the launch_callback function with the points and shelters data as arguments
-    visitor_button = tk.Button(main_win, text="start", command=lambda: [main_win.destroy(), launch_callback(points_data, shelters_data)],  bg="red", fg="white", font=("Arial", 8))
-    visitor_button.place(x=380, y=150)
+    visitor_button = tk.Button(main_win, text="Find Shelter", command=lambda: [main_win.destroy(), launch_callback(points_data, shelters_data)],  bg="red", fg="white", font=("Arial", 8))
+    visitor_button.place(x=800, y=150)
     # Starts the main loop of the main window
     main_win.mainloop()
